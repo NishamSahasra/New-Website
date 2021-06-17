@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	margin:0; 
+	background-color:rgb(200,200,250);
+}
+
+
+
+
+.logo {
+  border: 1px solid black;
+  border-right: none;
+  float: left;
+  width: 250px;
+  height: 250px;
+}
+.logo2 {
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    width: 1097px;
+    height: 250px;
+}
+
+
+
+.header{
+	background-color:rgb(50,50,50);
+    padding: 1%;
+    height: 43vh;
+	}
+.header ul{
+	margin-left: -0.4%;
+}
+.header li{
+	list-style: none;
+	display: inline;
+	padding: 8%;
+}
+
+.header a.nav1 {
+	float:left;
+	color:white;
+	font-size:25px;
+	text-align:left;
+	padding:14px 16px;
+	text-decoration:none;
+}
+.header a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+
+.container{
+  background-color:rgb(200,200,250);
+  height: 200vh;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 32%;
+  height: 30%;
+  background-color: white;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.logo img {
+  width: 100%;
+  height: auto;
+}
+div.logo2 img {
+  width: 100%;
+  height: 100%;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+
+.footer{
+	background-color:rgb(200,250,250);
+	height:200px;
+	color:black;
+	font-size:15px;
+}
+
+</style>
+	
+</head>
+<body>
+
+	
+<div>
+    <img src="Cushion Bar.jpg" alt="Random Name" class="logo">
+    <img src="Presentation1.jpg" alt="cover" class="logo2">
+</div>
+<div class="header">
+	<ul>
+		<li><a href="#" class="nav1">Home</a></li>
+  		<li><a href="#footer" class="nav1">Contact</a></li>
+	</ul>
+</div>
+<hr style="border:2px solid black;">
+
+<section>
+  <img class="mySlides" src="Slide1.jpg" style="width:100%">
+  <img class="mySlides" src="Slide2.jpg" style="width:100%">
+  <img class="mySlides" src="Slide3.jpg" style="width:100%">
+</section>
+
+<hr style="border:2px solid black;">
+<div class="container">
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0044.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0037.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery" style="height:30%;">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0055.jpg" alt="Random Name" style="width:100%;height:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0039.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0040.jpg" alt="Random Name" style="width:100%; height: 82%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0042.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0036.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="IMG-20210615-WA0044.jpg">
+    <img src="IMG-20210615-WA0031.jpg" alt="Random Name" style="width:100%;">
+  </a>
+  <div class="desc"></div>
+</div>
+</div>
+
+
+<hr style="border:2px solid blue;">
+
+<h3 style="font-size:20px;margin:10px;">Social & Contact</h3>
+			
+			
+<footer id="footer" class="footer">
+			  <p style="margin:10px;">Nisham Sahasra Peiris<br>
+			  19/4A,<br> Blasius Road, <br>Upper Indibedda,<br> Moratuwa<br>
+			  Tel: 0710627998<br>
+			  Whatsapp:0710627998<br></p>
+  <p style="text-align:center;">
+  Created by NISHAM SAHASRA PEIRIS
+  </p>
+
+</footer>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+</html>
